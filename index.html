@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Crypto Bro CTO Lead</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
@@ -21,7 +20,6 @@
       overflow-x: hidden;
     }
 
-    /* Loader */
     #loader {
       position: fixed;
       width: 100%;
@@ -61,8 +59,11 @@
       overflow: hidden;
       border: 3px solid #00ffe1;
       box-shadow: 0 0 20px #00ffe1;
-      margin-bottom: 40px;
+      margin: 40px auto;
       transition: transform 0.5s ease, box-shadow 0.5s ease;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
     }
 
     .header-image-container:hover {
@@ -71,16 +72,14 @@
     }
 
     .header-image {
-      width: 70%;
+      width: 100%;
       height: auto;
       display: block;
-      margin-left: 15%;
     }
 
     .content {
       text-align: center;
-      padding: 50px 20px;
-      background-color: #000;
+      padding: 40px 20px;
     }
 
     .card {
@@ -94,26 +93,29 @@
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       color: #00ffe1;
       margin-bottom: 20px;
       text-shadow: 0 0 10px #00ffe1;
     }
 
     p {
-      font-size: 1.4rem;
-      line-height: 1.7;
+      font-size: 1.2rem;
+      line-height: 1.6;
       color: #ccc;
     }
 
     .cta-button {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       margin: 40px auto;
-      padding: 15px 30px;
+      padding: 15px 25px;
       background-color: #00ffe1;
       color: #000;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       text-decoration: none;
       border-radius: 6px;
       box-shadow: 0 0 20px #00ffe1;
@@ -125,49 +127,70 @@
       transform: scale(1.05);
     }
 
+    .cta-button img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .counter {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #00ffe1;
+    }
+
     footer {
       margin-top: 60px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #888;
       text-shadow: 0 0 5px #00ffe1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- Music Control Button -->
 <div id="audio-controls" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
   <button id="music-toggle-btn" onclick="toggleMusic()" style="padding: 10px; background-color: #00ffe1; color: #000; border: none; border-radius: 6px; font-size: 1rem; box-shadow: 0 0 10px #00ffe1;">
     🔊 Music On
   </button>
 </div>
 
-<!-- Background Music -->
 <audio id="background-music" autoplay loop>
   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 
-<!-- Loader -->
 <div id="loader">
   <div class="glow-loader">Launching Portal...</div>
 </div>
 
-<!-- Contenu principal -->
 <div class="main-content" style="display:none">
-
-  <!-- Image bannière -->
   <div class="header-image-container">
     <img class="header-image" src="Crypto_Bro_CTO_Lead.png" alt="Crypto Bro Image">
   </div>
 
   <div class="content">
-    <!-- Bouton 1 -->
-    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank"><i class="fab fa-telegram-plane" style="margin-right: 10px;"></i> Join the Telegram </a>
+    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+      Join the Telegram Hub
+    </a>
 
-    <!-- Texte dans carte néon -->
+    <div class="counter">Bros onboarded: <strong>17/100</strong></div>
+
     <div class="card">
-      <h1>Crypto Bro CTO Lead</h1>
+       <h1>Crypto Bro CTO Lead</h1>
       <p>Every week, new coins launch last 5 minutes on DexScreener, then they’re dead.</p>
       <p>I take over the CTO role on promising abandoned coins.When the insiders vanish, I take the wheel.We don’t mourn rugs — we revive them.</p>
       <p>I don’t start from scratch.</p>
@@ -178,38 +201,33 @@
       <p>• When we’re 100, we go full launch mode,The 10 SOL raised = the marketing wallet for the token.</p>
       <p>•Every move is voted by the community on Telegram.You don’t pay for alpha.You pay to be part of the fucking alpha</p>
 
-</div>
+    </div>
 
-    <!-- Bouton 2 -->
-    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank"><i class="fab fa-telegram-plane" style="margin-right: 10px;"></i> Join the Telegram </a>
-    
-    <!-- Footer -->
+    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+      Join the Telegram Hub
+    </a>
+
     <footer>
-      Powered by cryptobro. Managed by Degens. We rise together — or burn together..
+      Powered by cryptobro. Managed by Degens. Built for wealth.
     </footer>
   </div>
 </div>
 
 <script>
-  // Simule un petit loading
   setTimeout(() => {
     document.getElementById('loader').style.display = 'none';
     document.querySelector('.main-content').style.display = 'block';
 
-    // Réglage du volume après le chargement
     const music = document.getElementById("background-music");
-    music.volume = 0.15; // Volume réduit à 15%
+    music.volume = 0.2;
   }, 1500);
 
-  // Fonction pour activer/désactiver la musique
   function toggleMusic() {
-    var music = document.getElementById("background-music");
-    if (music.paused) {
-      music.play();
-    } else {
-      music.pause();
-    }
+    const music = document.getElementById("background-music");
+    music.paused ? music.play() : music.pause();
   }
 </script>
+
 </body>
 </html>
