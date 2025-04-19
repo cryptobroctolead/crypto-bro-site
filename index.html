@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Bro CTO Lead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Loader */
+    #loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .glow-loader {
+      font-size: 2rem;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1, 0 0 30px #00ffe1;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .main-content {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .header-image-container {
+      overflow: hidden;
+      border: 3px solid #00ffe1;
+      box-shadow: 0 0 20px #00ffe1;
+      margin-bottom: 40px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .header-image-container:hover {
+      transform: scale(1.015);
+      box-shadow: 0 0 40px #00ffe1;
+    }
+
+    .header-image {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin-left: 15%;
+    }
+
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #000;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00ffe1;
+      box-shadow: 0 0 15px #00ffe1;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #00ffe1;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin: 40px auto;
+      padding: 15px 30px;
+      background-color: #00ffe1;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      box-shadow: 0 0 20px #00ffe1;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #00c8b7;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 1.2rem;
+      color: #888;
+      text-shadow: 0 0 5px #00ffe1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Music Control Button -->
+<div id="audio-controls" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+  <button id="music-toggle-btn" onclick="toggleMusic()" style="padding: 10px; background-color: #00ffe1; color: #000; border: none; border-radius: 6px; font-size: 1rem; box-shadow: 0 0 10px #00ffe1;">
+    🔊 Music On
+  </button>
+</div>
+
+<!-- Background Music -->
+<audio id="background-music" autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="glow-loader">Launching Portal...</div>
+</div>
+
+<!-- Contenu principal -->
+<div class="main-content" style="display:none">
+
+  <!-- Image bannière -->
+  <div class="header-image-container">
+    <img class="header-image" src="Crypto_Bro_CTO_Lead.png" alt="Crypto Bro Image">
+  </div>
+
+  <div class="content">
+    <!-- Bouton 1 -->
+    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank"><i class="fab fa-telegram-plane" style="margin-right: 10px;"></i> Join the Telegram </a>
+
+    <!-- Texte dans carte néon -->
+    <div class="card">
+      <h1>Crypto Bro CTO Lead</h1>
+      <p>Every week, new coins launch last 5 minutes on DexScreener, then they’re dead.</p>
+      <p>I take over the CTO role on promising abandoned coins.When the insiders vanish, I take the wheel.We don’t mourn rugs — we revive them.</p>
+      <p>I don’t start from scratch.</p>
+      <p>It’s called Crypto Bro CTO Lead, and it works like this:</p>
+      <p>• 1 Telegram hub open to all</p>
+      <p>• For every token launch, a private portal opens</p>
+      <p>• 0.1 SOL entry = skin in the game</p>
+      <p>• When we’re 100, we go full launch mode,The 10 SOL raised = the marketing wallet for the token.</p>
+      <p>•Every move is voted by the community on Telegram.You don’t pay for alpha.You pay to be part of the fucking alpha</p>
+
+</div>
+
+    <!-- Bouton 2 -->
+    <a class="cta-button" href="https://t.me/cryptobrodev" target="_blank"><i class="fab fa-telegram-plane" style="margin-right: 10px;"></i> Join the Telegram </a>
+    
+    <!-- Footer -->
+    <footer>
+      Powered by cryptobro. Managed by Degens. We rise together — or burn together..
+    </footer>
+  </div>
+</div>
+
+<script>
+  // Simule un petit loading
+  setTimeout(() => {
+    document.getElementById('loader').style.display = 'none';
+    document.querySelector('.main-content').style.display = 'block';
+
+    // Réglage du volume après le chargement
+    const music = document.getElementById("background-music");
+    music.volume = 0.15; // Volume réduit à 15%
+  }, 1500);
+
+  // Fonction pour activer/désactiver la musique
+  function toggleMusic() {
+    var music = document.getElementById("background-music");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+</body>
+</html>
